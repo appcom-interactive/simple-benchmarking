@@ -10,30 +10,32 @@ functions take in order to improve them in terms of execution time.
 
 ## Usage
 
-    const benchmark = require('simple-benchmarking');
-    const database = require('...');
+```javascript
+const benchmark = require('simple-benchmarking');
+const database = require('...');
 
-    const execute = async () => {
-      await benchmark.executeSuite({
-        'no arguments': {
-          method: database.methodToTest()
-        },
-    
-        'string argument': {
-          method: database.methodToTest('random string')
-        },
-    
-        'async method': {
-          method: database.asyncMethodToTest()
-        }
-      }, {
-        sort: true,
-        rounds: 10000,
-        name: 'Test Suite 01'
-      });
-    };
-    
-    execute();
+const execute = async () => {
+  await benchmark.executeSuite({
+    'no arguments': {
+      method: database.methodToTest()
+    },
+
+    'string argument': {
+      method: database.methodToTest('random string')
+    },
+
+    'async method': {
+      method: database.asyncMethodToTest()
+    }
+  }, {
+    sort: true,
+    rounds: 10000,
+    name: 'Test Suite 01'
+  });
+};
+
+execute();
+```
 
 This produces the following output:
 
