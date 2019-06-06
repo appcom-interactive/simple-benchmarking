@@ -4,7 +4,9 @@
   "description": "A module for executing simple banchmarks for synchronous and asynchronous functions (a.k.a. promises)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --max-warnings=0 .",
+    "patch": "npm --no-git-tag-version version patch",
+    "postpatch": "git add package.json && git commit -m \"Bump version patch number\" package*"
   },
   "keywords": [
     "benchmark",
@@ -15,5 +17,8 @@
   "dependencies": {
     "async-q": "^0.3.1",
     "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "eslint-config-appcom": "^1.0.9"
   }
 }
