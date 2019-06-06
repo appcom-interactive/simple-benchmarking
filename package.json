@@ -1,0 +1,19 @@
+{
+  "name": "simple-benchmark",
+  "version": "1.0.0",
+  "description": "A module for executing simple banchmarks for synchronous and asynchronous functions (a.k.a. promises)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "benchmark",
+    "async"
+  ],
+  "author": "Stefan Neidig <s.neidig@appcom-interactive.de>",
+  "license": "ISC",
+  "dependencies": {
+    "async-q": "^0.3.1",
+    "lodash": "^4.17.11"
+  }
+}
