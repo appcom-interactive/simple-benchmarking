@@ -1,8 +1,8 @@
 {
-  "name": "simple-benchmark",
+  "name": "simple-benchmarking",
   "version": "1.0.0",
   "description": "A module for executing simple banchmarks for synchronous and asynchronous functions (a.k.a. promises)",
-  "main": "index.js",
+  "main": "benchmark.js",
   "scripts": {
     "lint": "eslint --max-warnings=0 .",
     "patch": "npm --no-git-tag-version version patch",
