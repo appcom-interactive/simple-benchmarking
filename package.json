@@ -20,5 +20,9 @@
   },
   "devDependencies": {
     "eslint-config-appcom": "^1.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appcom-interactive/simple-benchmarking.git"
   }
 }
